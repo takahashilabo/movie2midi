@@ -31,13 +31,13 @@ uv pip install "piano-transcription-inference" "torch" --index-url https://downl
 
 ```bash
 # 基本 (入力ファイルと同じ名前で .mid を生成)
-uv run python movie2mid.py input.mkv
+uv run python movie2midi.py input.mkv
 
 # 出力先を指定
-uv run python movie2mid.py input.mkv -o output.mid
+uv run python movie2midi.py input.mkv -o output.mid
 
 # ピアノ専用モデルで変換（より高精度）
-uv run python movie2mid.py input.mkv -o output.mid --model piano
+uv run python movie2midi.py input.mkv -o output.mid --model piano
 ```
 
 ## モデルの選択
@@ -61,7 +61,7 @@ uv run python movie2mid.py input.mkv -o output.mid --model piano
 検出される音符が少ない場合はしきい値を下げてみてください。
 
 ```bash
-uv run python movie2mid.py input.mkv --onset-threshold 0.3 --frame-threshold 0.2
+uv run python movie2midi.py input.mkv --onset-threshold 0.3 --frame-threshold 0.2
 ```
 
 ## 仕組み

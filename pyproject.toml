@@ -1,5 +1,5 @@
 [project]
-name = "movie2mid"
+name = "movie2midi"
 version = "0.1.0"
 description = "動画ファイルのピアノ演奏をMIDIに変換するツール"
 requires-python = ">=3.11"
@@ -17,7 +17,7 @@ piano = [
 ]
 
 [project.scripts]
-movie2mid = "movie2mid:main"
+movie2midi = "movie2midi:main"
 
 [build-system]
 requires = ["hatchling"]

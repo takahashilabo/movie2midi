@@ -1,4 +1,4 @@
-"""動画ファイルのピアノ演奏をMIDIに変換するツール"""
+"""動画ファイルのピアノ演奏をMIDIに変換するツール (movie2midi)"""
 
 import argparse
 import subprocess
